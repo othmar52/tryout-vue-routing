@@ -1,10 +1,7 @@
 <template>
   <div>
-    <h1>COMPONENT: module 1 show</h1>
-    <p>do we have moduleConf in component?
-      <span v-if="moduleConf">yes: {{ moduleConf }}</span>
-      <span v-if="!moduleConf">no</span>
-    </p>
+    <Module1Status componentName="Module1Show"/>
+    <br>
     <p>navigation</p>
     <ul>
       <li>
@@ -18,10 +15,20 @@
 </template>
 <script>
 
+import Module1Status from './Module1Status'
+
 export default {
   name: 'Module1Show',
+  components: {
+    Module1Status
+  },
+  data () {
+    return {
+    }
+  },
   props: {
-    moduleConf: String
+  },
+  mounted () {
   }
 }
 </script>

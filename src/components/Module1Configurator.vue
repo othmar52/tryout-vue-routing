@@ -1,5 +1,8 @@
 <template>
   <div>
+    <Module1Status componentName="Module1Configurator"/>
+    <br>
+    <br>
     <h1>COMPONENT: module 1 configurator</h1>
     <ul>
       <li>we dont have url argument which represents the configuration</li>
@@ -18,3 +21,23 @@
     </ul>
   </div>
 </template>
+
+<script>
+
+import Module1Status from './Module1Status'
+
+export default {
+  name: 'Module1Configurator',
+  components: {
+    Module1Status
+  },
+  data () {
+    return {
+    }
+  },
+  props: {
+  },
+  mounted () {
+  }
+}
+</script>
